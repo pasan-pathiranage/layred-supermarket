@@ -4,6 +4,8 @@
  */
 package pos.layered.supermarket;
 
+import pos.layered.supermarket.view.LayoutView;
+
 /**
  *
  * @author User
@@ -14,7 +16,7 @@ public class PosLayeredSupermarket {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello");
+        new LayoutView().setVisible(true);
     }
     
 }
