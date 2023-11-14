@@ -4,14 +4,14 @@
  */
 package pos.layered.supermarket.dao.custom;
 
-import pos.layered.supermarket.dao.SuperDao;
+import pos.layered.supermarket.dao.CrudDao;
 import pos.layered.supermarket.entity.CustomerEntity;
 
 /**
  *
  * @author User
  */
-public interface CustomerDao extends SuperDao{
-    String addCustomer(CustomerEntity customerEntity) throws Exception;
+public interface CustomerDao extends CrudDao<CustomerEntity, String>{
+   
     
 }
