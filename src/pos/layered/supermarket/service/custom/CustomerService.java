@@ -4,10 +4,13 @@
  */
 package pos.layered.supermarket.service.custom;
 
+import pos.layered.supermarket.dto.CustomerDto;
+import pos.layered.supermarket.service.SuperService;
+
 /**
  *
  * @author User
  */
-public interface CustomerService {
-    
+public interface CustomerService extends SuperService {
+    String addCustomer(CustomerDto customerDto)throws Exception;
 }

@@ -1,14 +1,15 @@
- /*
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package pos.layered.supermarket.dto;
+package pos.layered.supermarket.entity;
 
 /**
  *
  * @author User
  */
-public class CustomerDto {
+public class CustomerEntity {
+    
     private String id;
     private String title;
     private String name;
@@ -19,10 +20,10 @@ public class CustomerDto {
     private String province;
     private String zip;
 
-    public CustomerDto() {
+    public CustomerEntity() {
     }
 
-    public CustomerDto(String id, String title, String name, String dob, Double salary, String address, String city, String province, String zip) {
+    public CustomerEntity(String id, String title, String name, String dob, Double salary, String address, String city, String province, String zip) {
         this.id = id;
         this.title = title;
         this.name = name;
@@ -162,7 +163,9 @@ public class CustomerDto {
 
     @Override
     public String toString() {
-        return "CustomerDto{" + "id=" + id + ", title=" + title + ", name=" + name + ", dob=" + dob + ", salary=" + salary + ", address=" + address + ", city=" + city + ", province=" + province + ", zip=" + zip + '}';
+        return "CustomerEntity{" + "id=" + id + ", title=" + title + ", name=" + name + ", dob=" + dob + ", salary=" + salary + ", address=" + address + ", city=" + city + ", province=" + province + ", zip=" + zip + '}';
     }
+    
+    
     
 }
