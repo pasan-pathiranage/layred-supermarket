@@ -5,7 +5,6 @@
 package pos.layered.supermarket.service.custom.impl;
 
 import java.util.ArrayList;
-import javax.swing.text.html.parser.Entity;
 import pos.layered.supermarket.dao.DaoFactory;
 import pos.layered.supermarket.dao.custom.CustomerDao;
 import pos.layered.supermarket.dto.CustomerDto;

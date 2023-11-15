@@ -26,7 +26,7 @@ public class CustomerDaoImpl implements CustomerDao {
     @Override
     public boolean update(CustomerEntity t) throws Exception {
         return CrudUtil.executeUpdate("UPDATE Customer SET CustTitle=?, CustName=?, "
-                + "DPB=?, Salary=?, CustAddress=?, City=?, Province=?, "
+                + "DOB=?, Salary=?, CustAddress=?, City=?, Province=?, "
                 + "PostalCode=? WHERE CustID=? ",
                 t.getTitle(), t.getName(), t.getDob(),
                 t.getSalary(), t.getAddress(), t.getCity(),
