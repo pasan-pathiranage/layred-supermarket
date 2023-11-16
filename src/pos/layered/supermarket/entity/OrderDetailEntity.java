@@ -1,25 +1,41 @@
- /*
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package pos.layered.supermarket.dto;
+package pos.layered.supermarket.entity;
 
 /**
  *
  * @author User
  */
-public class OrderDetailDto {
+public class OrderDetailEntity {
+    private String orderId;
     private String itemId;
     private Integer qty;
     private Double discount;
 
-    public OrderDetailDto() {
+    public OrderDetailEntity() {
     }
 
-    public OrderDetailDto(String itemId, Integer qty, Double discount) {
+    public OrderDetailEntity(String orderId, String itemId, Integer qty, Double discount) {
+        this.orderId = orderId;
         this.itemId = itemId;
         this.qty = qty;
         this.discount = discount;
+    }
+
+    /**
+     * @return the orderId
+     */
+    public String getOrderId() {
+        return orderId;
+    }
+
+    /**
+     * @param orderId the orderId to set
+     */
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
     /**
@@ -66,9 +82,8 @@ public class OrderDetailDto {
 
     @Override
     public String toString() {
-        return "OrderDetailDto{" + "itemId=" + itemId + ", qty=" + qty + ", discount=" + discount + '}';
+        return "OrderDetailEntity{" + "orderId=" + orderId + ", itemId=" + itemId + ", qty=" + qty + ", discount=" + discount + '}';
     }
-    
      
-
+    
 }

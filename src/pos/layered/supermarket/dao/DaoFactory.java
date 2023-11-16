@@ -6,6 +6,8 @@ package pos.layered.supermarket.dao;
 
 import pos.layered.supermarket.dao.custom.impl.CustomerDaoImpl;
 import pos.layered.supermarket.dao.custom.impl.ItemdaoImpl;
+import pos.layered.supermarket.dao.custom.impl.OrderDaoImpl;
+import pos.layered.supermarket.dao.custom.impl.OrderDetailDaoImpl;
 
 /**
  *
@@ -31,13 +33,17 @@ public class DaoFactory {
                 return new CustomerDaoImpl();
             case ITEM:
                 return new ItemdaoImpl();
+                case ORDER:
+                return new OrderDaoImpl();
+                case ORDERDETAIL:
+                return new OrderDetailDaoImpl();
             default:
                 return null;
         }
     }
 
     public enum DaoTypes {
-        CUSTOMER, ITEM
+        CUSTOMER, ITEM,ORDER,ORDERDETAIL
 
     }
 
